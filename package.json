@@ -1,0 +1,38 @@
+{
+	"name": "Page Intro Blocks",
+	"id": "page_intro_blocks",
+	"type": "module",
+	"version": "0.1.0",
+	"description": "A row of page introtext blocks with (or without) a read more >",
+	"files": [
+		"page-intro-blocks.css",
+		"page-intro-blocks.php"
+    ],
+	"settings": {
+		"number": "int",
+		"paddingTopBottom": "text",
+		"paddingLeftRight": "text",
+		"borders": "boolean",
+		"bordersBetweenOnly": "boolean",
+		"title": "boolean",
+		"readmore": "boolean",
+	},
+	"actions": {
+		"insertAfter": [
+			{
+				"searchValue": "* Homepage Blocks *************************************/",
+				"newValue": {
+					"file": "page-intro-blocks.php"
+				},
+				"files": [
+					"template-homepage.php"
+				]
+			}
+		],
+		"addAdvancedCustomFields": {
+			"files": [
+				"acf_page_intro_blocks.json"
+		    ]
+		}
+	}
+}

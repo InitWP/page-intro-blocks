@@ -1,0 +1,75 @@
+/**
+ * file: page-intro-blocks.css
+ *
+ * All page intro blocks related styles
+ *
+**/
+
+.teaserIntroBlocks {
+	padding-top: 40px;
+}
+
+.teaserIntroBlock {
+	padding: {{ paddingTopBottom }} {{ $paddingLeftRight }};
+}
+
+.teaserIntroBlock--inner {
+	color: #000;
+	text-decoration: none;
+}
+
+.teaserIntroBlock--title {
+	padding: 0;
+	margin: 0;
+	text-transform: none;
+}
+
+@media screen and (min-width: 400px) {
+
+	{{ bordersBetweenOnly }}
+	.teaserIntroBlock {
+		border-right: 1px solid #e00049;
+	}
+
+	.teaserIntroBlocks > *:nth-of-type(2n) {
+		border-right: 0;
+	}
+	{{ /bordersBetweenOnly }}
+	{{ borders }}
+	.teaserIntroBlocks {
+		border-left: 1px solid #e00049;
+	}
+
+	.teaserIntroBlocks > *:nth-of-type(2n),
+	.teaserIntroBlock:last-child {
+		border-right: 1px solid #e00049;
+	}
+	{{ /borders }}
+}
+
+@media screen and (min-width: 768px) {
+
+	{{ bordersBetweenOnly }}
+	.teaserIntroBlocks > *:nth-of-type(2n) {
+		border-right: 1px solid #e00049;
+	}
+
+	.teaserIntroBlock:last-child {
+		border-right: 0;
+	}
+	{{ /bordersBetweenOnly }}
+	{{ borders }}
+	.teaserIntroBlocks {
+		border-left: 1px solid #e00049;
+	}
+
+	.teaserIntroBlock:last-child {
+		border-right: 1px solid #e00049;
+	}
+	{{ /borders }}
+}
+
+@media screen and (min-width: 1024px) {
+
+
+}
