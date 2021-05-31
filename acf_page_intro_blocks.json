@@ -15,8 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "min": 3,
-            "max": 3,
+            "min": "{{ number }}",
+            "max": "{{ number }}",
             "layout": "table",
             "button_label": "Nieuw intro blok",
             "sub_fields": [
