@@ -1,6 +1,5 @@
 {
 	"name": "Page Intro Blocks",
-	"id": "page_intro_blocks",
 	"type": "module",
 	"version": "0.1.0",
 	"description": "A row of page introtext blocks with (or without) a read more >",
