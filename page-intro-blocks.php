@@ -13,17 +13,17 @@ if( have_rows('page_intro_blocks') ): ?>
 		?>
 			<div class="teaserIntroBlock">
 				<a href="<?php echo $block_pagelink; ?>" class="teaserIntroBlock--inner">
-					{{ title }}
+					{% if title %}
 					<h2 class="teaserIntroBlock--title"><?php echo $block_title; ?></h2>
-					{{ /title }}
+					{% end %}
 					<div class="teaserIntroBlock--content">
 						<?php echo $block_introtext; ?>
 					</div>
-					{{ readmore }}
+					{% if readmore %}
 					<div class="readmore">
 						<?php echo 'Read more > (make global)' ?>
 					</div>
-					{{ /readmore }}
+					{% end %}
 				</a>
 			</div>
 			<?php
