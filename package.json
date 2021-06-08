@@ -38,7 +38,7 @@
 	},
 	"actions": {
 		"insertAfter": [{
-			"searchValue": "* Homepage Blocks *************************************/",
+			"searchValue": "* Homepage Blocks *************************************/ ?>",
 			"newValue": {
 				"file": "page-intro-blocks.php"
 			},
