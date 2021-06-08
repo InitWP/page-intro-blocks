@@ -4,30 +4,48 @@
 	"version": "0.1.0",
 	"description": "A row of page introtext blocks with (or without) a read more >",
 	"files": [
-		"page-intro-blocks.css",
-		"page-intro-blocks.php"
+		"page-intro-blocks.css"
     ],
-	"settings": {
-		"number": "int",
-		"paddingTopBottom": "text",
-		"paddingLeftRight": "text",
-		"borders": "boolean",
-		"bordersBetweenOnly": "boolean",
-		"title": "boolean",
-		"readmore": "boolean"
-	},
+	"settings": [{
+		"number": {
+			"type": "int",
+			"default": 3
+		},
+		"paddingTopBottom": {
+			"type": "text",
+			"default": "5px"
+		},
+		"paddingLeftRight": {
+			"type": "text",
+			"default": "10px"
+		},
+		"bordersAround": {
+			"type": "boolean",
+			"default": "false"
+		},
+		"bordersBetween": {
+			"type": "boolean",
+			"default": "true"
+		},
+		"title": {
+			"type": "boolean",
+			"default": "true"
+		},
+		"readmore": {
+			"type": "boolean",
+			"default": "true"
+		}
+	}],
 	"actions": {
-		"insertAfter": [
-			{
-				"searchValue": "* Homepage Blocks *************************************/",
-				"newValue": {
-					"file": "page-intro-blocks.php"
-				},
-				"files": [
-					"template-homepage.php"
-				]
-			}
-		],
+		"insertAfter": [{
+			"searchValue": "* Homepage Blocks *************************************/",
+			"newValue": {
+				"file": "page-intro-blocks.php"
+			},
+			"files": [
+				"template-homepage.php"
+			]
+		}],
 		"addAdvancedCustomFields": {
 			"files": [
 				"acf_page_intro_blocks.json"
