@@ -6,7 +6,7 @@
 	"files": [
 		"page-intro-blocks.css"
     ],
-	"settings": [{
+	"settings": {
 		"number": {
 			"type": "int",
 			"default": 3
@@ -35,7 +35,7 @@
 			"type": "boolean",
 			"default": "true"
 		}
-	}],
+	},
 	"actions": {
 		"insertAfter": [{
 			"searchValue": "* Homepage Blocks *************************************/",
