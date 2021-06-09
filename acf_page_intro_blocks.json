@@ -1,9 +1,9 @@
 {
-    "key": "group_",
+    "key": "group_page_intro_blocks",
     "title": "Pagina intro blokken",
     "fields": [
         {
-            "key": "field_",
+            "key": "field_page_intro_blocks",
             "label": "Intro blokken",
             "name": "page_intro_blocks",
             "type": "repeater",
@@ -21,7 +21,7 @@
             "button_label": "Nieuw intro blok",
             "sub_fields": [
                 {
-                    "key": "field_",
+                    "key": "field_page_intro_block_title",
                     "label": "Titel",
                     "name": "page_intro_block_title",
                     "type": "text",
@@ -40,7 +40,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_",
+                    "key": "field_page_intro_block_introtext",
                     "label": "Introtekst",
                     "name": "page_intro_block_introtext",
                     "type": "textarea",
@@ -59,7 +59,7 @@
                     "new_lines": "br"
                 },
                 {
-                    "key": "field_",
+                    "key": "field_page_intro_block_page_link",
                     "label": "Pagina link",
                     "name": "page_intro_block_page_link",
                     "type": "page_link",
