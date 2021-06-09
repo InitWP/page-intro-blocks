@@ -10,7 +10,7 @@
 }
 
 .teaserIntroBlock {
-	padding: {{ paddingTopBottom }} {{ $paddingLeftRight }};
+	padding: {{paddingTopBottom}} {{paddingLeftRight}};
 }
 
 .teaserIntroBlock--inner {
