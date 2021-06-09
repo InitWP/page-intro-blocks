@@ -1,6 +1,6 @@
 <?php /************************************* Page Intro Blocks *************************************/
 if( have_rows('page_intro_blocks') ): ?>
-	<div class="grid-{{ number }} teaserIntroBlocks grid-equalColumns">
+	<div class="grid-{{number}} teaserIntroBlocks grid-equalColumns">
 
 	<?php while( have_rows('page_intro_blocks') ): the_row();
 
@@ -13,17 +13,17 @@ if( have_rows('page_intro_blocks') ): ?>
 		?>
 			<div class="teaserIntroBlock">
 				<a href="<?php echo $block_pagelink; ?>" class="teaserIntroBlock--inner">
-					{% if title %}
+					{{#if title}}
 					<h2 class="teaserIntroBlock--title"><?php echo $block_title; ?></h2>
-					{% end %}
+					{{/if}}
 					<div class="teaserIntroBlock--content">
 						<?php echo $block_introtext; ?>
 					</div>
-					{% if readmore %}
+					{{#if readmore}}
 					<div class="readmore">
 						<?php echo 'Read more > (make global)' ?>
 					</div>
-					{% end %}
+					{{/if}}
 				</a>
 			</div>
 			<?php
