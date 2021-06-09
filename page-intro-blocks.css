@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 400px) {
 
-	{% if bordersBetween %}
+	{{#if bordersBetween}}
 	.teaserIntroBlock {
 		border-right: 1px solid #e00049;
 	}
@@ -34,8 +34,8 @@
 	.teaserIntroBlocks > *:nth-of-type(2n) {
 		border-right: 0;
 	}
-	{% end %}
-	{% if bordersAround %}
+	{{/if}}
+	{{#if bordersAround}}
 	.teaserIntroBlocks {
 		border-left: 1px solid #e00049;
 	}
@@ -44,12 +44,12 @@
 	.teaserIntroBlock:last-child {
 		border-right: 1px solid #e00049;
 	}
-	{% end %}
+	{{/if}}
 }
 
 @media screen and (min-width: 768px) {
 
-	{% if bordersBetween %}
+	{{#if bordersBetween}}
 	.teaserIntroBlocks > *:nth-of-type(2n) {
 		border-right: 1px solid #e00049;
 	}
@@ -57,8 +57,8 @@
 	.teaserIntroBlock:last-child {
 		border-right: 0;
 	}
-	{% end %}
-	{% if bordersAround %}
+	{{/if}}
+	{{#if bordersAround}}
 	.teaserIntroBlocks {
 		border-left: 1px solid #e00049;
 	}
@@ -66,7 +66,7 @@
 	.teaserIntroBlock:last-child {
 		border-right: 1px solid #e00049;
 	}
-	{% end %}
+	{{/if}}
 }
 
 @media screen and (min-width: 1024px) {
