@@ -51,5 +51,8 @@
 				"acf_page_intro_blocks.json"
 		    ]
 		}
+	},
+	"dependencies": {
+		"acf-manager": "module"
 	}
 }
