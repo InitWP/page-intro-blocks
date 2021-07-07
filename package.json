@@ -53,6 +53,6 @@
 		}
 	},
 	"dependencies": {
-		"acf-manager": "module"
+		"acf-local-json-manager": "module"
 	}
 }
