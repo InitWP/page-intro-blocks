@@ -48,7 +48,7 @@
 		}],
 		"addAdvancedCustomFields": {
 			"files": [
-				"acf_page_intro_blocks.json"
+				"group_page_intro_blocks.json"
 		    ]
 		}
 	},
